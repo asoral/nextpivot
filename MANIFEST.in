@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include nextpivot *.css
+recursive-include nextpivot *.csv
+recursive-include nextpivot *.html
+recursive-include nextpivot *.ico
+recursive-include nextpivot *.js
+recursive-include nextpivot *.json
+recursive-include nextpivot *.md
+recursive-include nextpivot *.png
+recursive-include nextpivot *.py
+recursive-include nextpivot *.svg
+recursive-include nextpivot *.txt
+recursive-exclude nextpivot *.pyc

@@ -1,0 +1,23 @@
+{
+ "content": null,
+ "creation": "2020-04-27 13:43:24.085341",
+ "docstatus": 0,
+ "doctype": "Page",
+ "idx": 0,
+ "modified": "2020-04-27 13:43:38.177204",
+ "modified_by": "Administrator",
+ "module": "Nextpivot",
+ "name": "self-analytics",
+ "owner": "Administrator",
+ "page_name": "Self Analytics",
+ "roles": [
+  {
+   "role": "System Manager"
+  }
+ ],
+ "script": null,
+ "standard": "Yes",
+ "style": null,
+ "system_page": 0,
+ "title": "Self Analytics"
+}

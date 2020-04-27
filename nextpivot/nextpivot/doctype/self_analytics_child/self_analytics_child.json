@@ -1,0 +1,45 @@
+{
+ "actions": [],
+ "creation": "2020-04-27 13:36:29.448061",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "label",
+  "field_name",
+  "field_type"
+ ],
+ "fields": [
+  {
+   "fieldname": "label",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Filed Name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "field_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Filed",
+   "read_only": 1
+  },
+  {
+   "fieldname": "field_type",
+   "fieldtype": "Read Only",
+   "label": "Field Type"
+  }
+ ],
+ "istable": 1,
+ "links": [],
+ "modified": "2020-04-27 15:53:52.072180",
+ "modified_by": "Administrator",
+ "module": "Nextpivot",
+ "name": "Self Analytics Child",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

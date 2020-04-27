@@ -1,0 +1,89 @@
+{
+ "actions": [],
+ "autoname": "field:pivot_name",
+ "creation": "2020-04-27 13:32:51.615542",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "pivot_name",
+  "based_on",
+  "column_break_3",
+  "doctype_name",
+  "section_break_4",
+  "query",
+  "section_break_6",
+  "field_line"
+ ],
+ "fields": [
+  {
+   "fieldname": "pivot_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Name",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "based_on",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Based On",
+   "options": "\nDocType\nQuery",
+   "reqd": 1
+  },
+  {
+   "fieldname": "doctype_name",
+   "fieldtype": "Link",
+   "label": "DocType",
+   "options": "DocType"
+  },
+  {
+   "fieldname": "section_break_4",
+   "fieldtype": "Section Break"
+  },
+  {
+   "description": "Convert Date and Datetime data to String.\nUse -  date_format(field_name  ,'%d-%m-%y')  Function",
+   "fieldname": "query",
+   "fieldtype": "Code",
+   "label": "query"
+  },
+  {
+   "fieldname": "section_break_6",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "field_line",
+   "fieldtype": "Table",
+   "label": "Fields",
+   "options": "Self Analytics Child"
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "links": [],
+ "modified": "2020-04-27 16:41:10.713871",
+ "modified_by": "Administrator",
+ "module": "Nextpivot",
+ "name": "Self Analytics",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

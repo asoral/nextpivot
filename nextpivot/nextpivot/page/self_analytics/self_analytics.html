@@ -1,0 +1,133 @@
+<html>
+<head></head>
+<body>
+
+<div id="wdr-component"></div>
+<div id="highchartsContainer"></div>
+
+<script>
+var pivot = new WebDataRocks({
+    container: "#wdr-component",
+    toolbar: true,
+    report: {
+        "dataSource": {
+            "dataSourceType": "json",
+            "data": {{ j_data }}
+        },
+        slice: {
+            rows: [{
+                uniqueName: "Country"
+            }, {
+                uniqueName: "Measures"
+            }],
+            columns: [{
+                uniqueName: "Category"
+            }],
+            measures: [{
+                uniqueName: "Price"
+            }]
+        }
+    },
+    reportcomplete: function() {
+        pivot.off("reportcomplete");
+        createChart();
+    }
+});
+
+function createChart() {
+    pivot.highcharts.getData({
+        type: "{{ chart_type }}"
+        <!--type: "waterfall"-->
+    }, function(data) {
+        Highcharts.chart("highchartsContainer", data);
+    }, function(data) {
+        Highcharts.chart("highchartsContainer", data);
+    });
+}
+
+function getJSONData() {
+    return [{
+        "Country": "Australia",
+        "Category": "Wood",
+        "Price": 445
+    }, {
+        "Country": "Australia",
+        "Category": "Bikes",
+        "Price": 125
+    }, {
+        "Country": "China",
+        "Category": "Clothing",
+        "Price": 190
+    }, {
+        "Country": "United States",
+        "Category": "Aircraft",
+        "Price": 406
+    }, {
+        "Country": "United States",
+        "Category": "Bikes",
+        "Price": 85
+    }, {
+        "Country": "United Kingdom",
+        "Category": "Cars",
+        "Price": 21
+    }, {
+        "Country": "Canada",
+        "Category": "Clothing",
+        "Price": 666
+    }, {
+        "Country": "Germany",
+        "Category": "Cars",
+        "Price": 563
+    }, {
+        "Country": "United Kingdom",
+        "Category": "Bikes",
+        "Price": 397
+    }, {
+        "Country": "Germany",
+        "Category": "Clothing",
+        "Price": 800
+    }, {
+        "Country": "Germany",
+        "Category": "Cars",
+        "Price": 172
+    }, {
+        "Country": "Canada",
+        "Category": "Aircraft",
+        "Price": 352
+    }, {
+        "Country": "United Kingdom",
+        "Category": "Aircraft",
+        "Price": 540
+    }, {
+        "Country": "United Kingdom",
+        "Category": "Aircraft",
+        "Price": 204
+    }, {
+        "Country": "Germany",
+        "Category": "Clothing",
+        "Price": 292
+    }, {
+        "Country": "Canada",
+        "Category": "Aircraft",
+        "Price": 901
+    }, {
+        "Country": "Canada",
+        "Category": "Wood",
+        "Price": 348
+    }, {
+        "Country": "Canada",
+        "Category": "Clothing",
+        "Price": 725
+    }, {
+        "Country": "Canada",
+        "Category": "Clothing",
+        "Price": 13
+    }, {
+        "Country": "China",
+        "Category": "Wood",
+        "Price": 62
+    }]
+}
+</script>
+</body>
+</html>

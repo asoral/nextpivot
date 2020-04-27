@@ -1,0 +1,29 @@
+{
+ "cards": [
+  {
+   "hidden": 0,
+   "label": "Self Analytics",
+   "links": "[\n    {\n        \"type\": \"doctype\",\n        \"name\": \"Self Analytics\",\n        \"description\": \"Create custom pivot view\",\n        \"label\": \"Self Analytics\",\n        \"onboard\": 1\n    }\n]"
+  }
+ ],
+ "category": "Modules",
+ "charts": [],
+ "creation": "2020-04-27 16:42:09.419833",
+ "developer_mode_only": 0,
+ "disable_user_customization": 0,
+ "docstatus": 0,
+ "doctype": "Desk Page",
+ "extends": "Tools",
+ "extends_another_page": 1,
+ "idx": 0,
+ "is_standard": 1,
+ "label": "Custom Tool",
+ "modified": "2020-04-27 16:44:07.031733",
+ "modified_by": "Administrator",
+ "module": "Nextpivot",
+ "name": "Custom Tool",
+ "owner": "Administrator",
+ "pin_to_bottom": 0,
+ "pin_to_top": 0,
+ "shortcuts": []
+}
